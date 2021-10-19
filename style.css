@@ -148,10 +148,16 @@ img{
     transition:.5s;
     }
 
-    .home{height:100vh;
+    .home{
+        height:100vh;
         }
-    .text-div{align-self:flex-end;
-        width: 600px;}
+    .text-div{
+        align-self:flex-end;
+    }
+
+    .text-p{
+        width:200px;
+    }
 
     .about-container,.skills__container{
         grid-template-columns:repeat(2,1fr);
@@ -169,7 +175,9 @@ img{
     .section-title{margin-bottom:var(--mb-6);}
     .section-title::after{width:80px;top:3rem;}
 }
-    
+
+
+
     .nav-item{
     margin-bottom:var(--mb-4);
     }
@@ -235,34 +243,35 @@ img{
 .home{
     background-image: url("/images/smaller\ for\ bg.png");
     background-repeat: no-repeat;
-    background-size: 1020px 80vh;
+    background-size: 60vw 80vh;
     height:calc(100vh - 3rem);
-    row-gap:1rem;
+    /*row-gap:1rem;*/
     }
 .text-div{
     display:grid;
+
     grid-template-columns: 2fr 1fr;
+    grid-template-areas: "title p1"
+                         "but p2"; 
     align-self:center;}
 .text-hero{
+    grid-area: title;
     font-size:var(--big-font-size);
-    margin-bottom:var(--mb-5)
+    margin-bottom:var(--mb-5);
 }
 .text-hero-color{
     color:var(--first-color);
 }
 
 .text-p{
+    grid-area: p1;
     font-size:var(--h2-font-size);
-    margin-bottom:var(--mb-5)
+    margin-bottom:var(--mb-5);
 }
 .text-p-color{
     color:var(--first-color);
 }
-.home__social{display:flex;flex-direction:column}
-.home__social-icon{width:max-content;margin-bottom:var(--mb-2);
-font-size:1.5rem;color:var(--second-color)}
-.home__social-icon:hover{color:var(--first-color)}
-.home__img{position:absolute;right:0;bottom:0;width:295px}
+
 .button{
     display:inline-block;
     background-color:var(--first-color);
@@ -272,6 +281,14 @@ font-size:1.5rem;color:var(--second-color)}
     border-radius:.5rem;
     max-width: 175px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-div{
+    grid-area:but;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    align-self: center;
+    column-gap: normal;
 }
 .button:hover{box-shadow:0 10px 36px rgba(0,0,0,.15)}
 
