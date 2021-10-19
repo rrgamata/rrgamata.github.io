@@ -241,18 +241,21 @@ img{
 
 
 .home{
-    background-image: url("/images/smaller\ for\ bg.png");
+    position:relative;
+    background-image: url("/images/bg\ 1024x929\ for\ prof.svg");
     background-repeat: no-repeat;
-    background-size: 60vw 80vh;
+    background-size:auto auto;
+    background-position: center;
     height:calc(100vh - 3rem);
-    /*row-gap:1rem;*/
+    
     }
 .text-div{
+    position: absolute;
     display:grid;
-
+    column-gap:1rem;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "title p1"
-                         "but p2"; 
+                         "but but"; 
     align-self:center;}
 .text-hero{
     grid-area: title;
@@ -273,6 +276,7 @@ img{
 }
 
 .button{
+    grid-area: but;
     display:inline-block;
     background-color:var(--first-color);
     color:#fff;
