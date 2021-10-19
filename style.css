@@ -21,6 +21,7 @@
 
 @media screen and (min-width:768px){
     :root{
+        
         --big-font-size:3.5rem;
         --h2-font-size:2rem;
         --normal-font-size:1rem;
@@ -147,8 +148,10 @@ img{
     transition:.5s;
     }
 
-    .home{height:100vh;}
-    .text-div{align-self:flex-end;}
+    .home{height:100vh;
+        }
+    .text-div{align-self:flex-end;
+        width: 600px;}
 
     .about-container,.skills__container{
         grid-template-columns:repeat(2,1fr);
