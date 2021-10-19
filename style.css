@@ -355,4 +355,11 @@ img{
     grid-template-rows:repeat(2,1fr);column-gap:2rem
     }
 
+    .p-div{
+        display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+    }
+
 
