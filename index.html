@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MySite</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <header class="top-header">
         <nav class="nav backdrop-grid">
             <div><a href="#" class="nav-logo">Rufus Amata</a></div>
-            <div class="nav-menu">
+            <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About Me</a>
@@ -26,6 +28,11 @@
                         <a href="#contact" class="nav-link">Contact Me</a>
                     </li>
                 </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="material-icons md-48">
+                    list
+                    </span>
             </div>
             
         </nav>
@@ -72,8 +79,56 @@
         </div>
 
     </section>
+    <section class="project section" id="project">
+        <div class="bg-div"></div>
+        <h2 class="section-title project-title"> Projects</h2>
+        <div class="project-container backdrop-grid">
+            <div class="project-img">
+                <a href="#">
+                    <img src="images/psite.png" alt="Personal Website">
+                </a>
+               <h2>Personal Site</h2>
+            </div>
+            <div class="project-img">
+                <img src="images/loan.png" alt="Loan Monitoring System">
+               <h2>Loan System</h2>  
+            </div>
+            <div class="project-img">
+                    <img src="images/dorm.png" alt="Dorm Monitoring System">
+                <h2>Dorm System</h2> 
+            </div>
+            <div class="project-img">
+                    <img src="images/pos.png" alt="Point of Sale System">
+               <h2>Point of Sale System</h2>
+            </div>
+        </div>
+    </section>
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container backdrop-grid">
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form class="contact-form" action="https://formspree.io/f/xoqyzlad" method="POST">
+        <label>  Your Name:  
+                <input class="contact-input" type="text" name="fullname">
+        </label>
+        <label>  Your email:  
+            <input class="contact-input" type="email" name="_replyto">
+        </label>
+        <label>
+                Your message:
+                <textarea class="contact-input" name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button class="contact-button button" type="submit">Send</button>
+        </form>
+    </div>
+    </section>
     
 </main>    
-
+<script src="base.js"></script>
 </body>
+<footer class="footer">
+
+   <!-- <a class="credits" href='https://www.freepik.com/vectors/abstract-background'>Abstract background vector created by rawpixel.com - www.freepik.com</a>-->
+</footer>
 </html>
