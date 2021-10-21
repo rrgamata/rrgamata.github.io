@@ -217,14 +217,15 @@ img{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
     }
 
-    .section{padding-top:4rem;padding-bottom:3rem;}
+    .section{padding-top:4rem;padding-bottom:3rem;
+    margin-bottom: 40px;}
     .section-title{margin-bottom:var(--mb-6);}
     .section-title::after{width:80px;top:3rem;}
 
     .project-container{
         display: flex;
         flex-direction: column;
-        row-gap:2rem;
+        row-gap:3rem;
         text-align: center;
     }
 
