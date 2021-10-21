@@ -143,9 +143,9 @@ img{
         position:fixed;
         top:var(--header-height);
         right:-100%;
-        width:80%;
+        width:40%;
         height:100%;
-        padding:2rem;
+        padding:2rem 2rem 2rem -1rem;
         background-color:var(--first-color);
         transition:.5s;
     }
