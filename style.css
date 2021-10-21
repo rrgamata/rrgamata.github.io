@@ -11,6 +11,7 @@
     */
     --first-color: #46437E;
     --second-color:#FAFAFA;
+    
 }
 :root{
     --body-font:'Poppins',sans-serif;
@@ -128,6 +129,7 @@ img{
 
 
 .nav{
+   /* position: fixed;*/
     height:var(--header-height);
     display:flex;
     justify-content:space-between;
@@ -226,25 +228,34 @@ img{
         text-align: center;
     }
 
-    .project-title{
-        color:var(--second-color);
-        text-shadow: 4px 4px 13px rgba(0, 0, 0, 0.836);
+   
+
+
+    .section-title::after{
+        position:absolute;
+        content:"";
+        width:64px;
+        height:.18rem;
+        left:0;
+        right:0;
+        margin:auto;
+        top:3rem;
+        background-color:var(--first-color);
     }
+
+
+    .project-title{
+        color: var(--second-color);
+        background-color:rgba(70, 67, 126, 0.582);
+        box-shadow:0 10px 36px rgba(0,0,0,.15)
+    }
+
     .project-title::after{
-        background-color:var(--second-color);
-        box-shadow:0 4px 25px rgba(14,36,49,.15);
+        background-color: var(--second-color);
     }
 
     /*.project-img img:hover{transform:scale(1.1);}*/
-    .project-img{
-        box-shadow:0 4px 25px rgba(14,36,49,.15);
-        border-radius:.5rem;
-        overflow:hidden;
-    }
-    .project-img img{
-        transition:1s;
-        cursor:pointer;
-    }
+  
 
    
 
@@ -431,13 +442,25 @@ img{
     height: 100%;
    }
    .project-container{
-    
+    text-align: center;
     grid-template-columns:repeat(3,1fr);
     grid-template-rows:repeat(2,1fr);
     column-gap:2rem;
     row-gap:2rem;
     }
 
+    .project-label{
+        background-color: var(--second-color);
+    }
+    .project-img{
+        box-shadow:0 4px 25px rgba(8, 16, 20, 0.952);
+        border-radius:.5rem;
+        overflow:hidden;
+    }
+    .project-img img{
+        transition:1s;
+        cursor:pointer;
+    }
  
   
 
@@ -481,6 +504,10 @@ img{
         font-size:2rem;margin-bottom:var(--mb-4);
     }
     .footer__social{margin-bottom:var(--mb-4);}
-    .footer__icon{font-size:1.5rem;color:#fff;margin:0 var(--mb-2);}
+    .icon{
+        font-size:1.5rem;
+        color:var(--second-color);
+        margin:0 var(--mb-2);
+    }
 
 
